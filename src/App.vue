@@ -41,6 +41,14 @@ export default {
     this.$refs.yt.focus()
   },
   methods: {
+    clear() {
+      this.yourText = ''
+      this.zenkakuText = ''
+      this.hankakuText = ''
+    },
+    async paste() {
+      this.yourText = await navigator.clipboard.readText()
+    }
   }
 }
 </script>
