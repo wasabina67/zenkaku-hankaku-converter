@@ -1,4 +1,5 @@
 # zenkaku-hankaku-converter
+半角全角変換ツール
 
 ## Project setup
 ```
