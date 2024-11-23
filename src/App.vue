@@ -1,5 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <div>
+    <h1>zenkaku-hankaku-converter</h1>
+    <h4>Convert alphanumeric characters only</h4>
+  </div>
 </template>
 
 <script>
