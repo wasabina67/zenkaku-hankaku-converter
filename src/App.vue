@@ -102,6 +102,6 @@ button {
 }
 
 .bg-color-f2f2f2 {
-  background-color: #F2F2F2
+  background-color: #F2F2F2;
 }
 </style>
