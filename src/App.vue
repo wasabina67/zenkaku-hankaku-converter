@@ -14,13 +14,13 @@
     <p>zenkaku</p>
     <textarea placeholder="" v-model="zenkakuText" class="bg-color-f2f2f2" readonly></textarea>
     <div>
-      <button @click="copy()">Copy</button>
+      <button @click="copy(zenkakuText)">Copy</button>
     </div>
 
     <p>hankaku</p>
     <textarea placeholder="" v-model="hankakuText" class="bg-color-f2f2f2" readonly></textarea>
     <div>
-      <button @click="copy()">Copy</button>
+      <button @click="copy(hankakuText)">Copy</button>
     </div>
   </div>
 </template>
@@ -63,6 +63,9 @@ export default {
       const ytext = this.yourText
       this.zenkakuText = this.toZenkaku(ytext)
       this.hankakuText = this.toHankaku(ytext)
+    },
+    async copy(txt) {
+      await navigator.clipboard.writeText(txt)
     }
   }
 }
