@@ -12,13 +12,13 @@
     </div>
 
     <p>zenkaku</p>
-    <textarea placeholder="" v-model="zenkakuText"></textarea>
+    <textarea placeholder="" v-model="zenkakuText" readonly></textarea>
     <div>
       <button @click="copy()">Copy</button>
     </div>
 
     <p>hankaku</p>
-    <textarea placeholder="" v-model="hankakuText"></textarea>
+    <textarea placeholder="" v-model="hankakuText" readonly></textarea>
     <div>
       <button @click="copy()">Copy</button>
     </div>
