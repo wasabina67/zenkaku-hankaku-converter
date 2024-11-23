@@ -5,12 +5,23 @@
 
     <p>Text to convert</p>
     <textarea placeholder="Enter your text"></textarea>
+    <div>
+      <button @click="clear()">Clear</button>
+      <button @click="paste()">Paste</button>
+      <button @click="convert()">Convert</button>
+    </div>
 
     <p>zenkaku</p>
     <textarea placeholder=""></textarea>
+    <div>
+      <button @click="copy()">Copy</button>
+    </div>
 
     <p>hankaku</p>
     <textarea placeholder=""></textarea>
+    <div>
+      <button @click="copy()">Copy</button>
+    </div>
   </div>
 </template>
 
@@ -44,5 +55,11 @@ textarea {
 
 textarea:focus {
   outline-color: #42b883;
+}
+
+button {
+  font-size: 0.8rem;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 </style>
