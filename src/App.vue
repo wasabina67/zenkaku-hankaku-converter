@@ -36,6 +36,11 @@ export default {
       zenkakuText: '',
       hankakuText: ''
     }
+  },
+  mounted() {
+    this.$refs.yt.focus()
+  },
+  methods: {
   }
 }
 </script>
