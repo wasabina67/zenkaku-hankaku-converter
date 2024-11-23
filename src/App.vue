@@ -48,6 +48,10 @@ export default {
     },
     async paste() {
       this.yourText = await navigator.clipboard.readText()
+    },
+    toZenkaku(txt) {
+    },
+    toHankaku(txt) {
     }
   }
 }
