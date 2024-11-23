@@ -50,8 +50,16 @@ export default {
       this.yourText = await navigator.clipboard.readText()
     },
     toZenkaku(txt) {
+      return txt.replace(/[A-Za-z0-9]/g, (t) => {
+        return String.fromCharCode(t.charCodeAt(0) + 0xFEE0)
+      })
     },
     toHankaku(txt) {
+      return txt.replace(/[Ａ-Ｚａ-ｚ０-９]/g, (t) => {
+        return String.fromCharCode(t.charCodeAt(0) - 0xFEE0)
+      })
+    },
+    convert() {
     }
   }
 }
