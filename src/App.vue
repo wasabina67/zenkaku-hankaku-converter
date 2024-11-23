@@ -12,13 +12,13 @@
     </div>
 
     <p>zenkaku</p>
-    <textarea placeholder="" v-model="zenkakuText" readonly></textarea>
+    <textarea placeholder="" v-model="zenkakuText" class="bg-color-f2f2f2" readonly></textarea>
     <div>
       <button @click="copy()">Copy</button>
     </div>
 
     <p>hankaku</p>
-    <textarea placeholder="" v-model="hankakuText" readonly></textarea>
+    <textarea placeholder="" v-model="hankakuText" class="bg-color-f2f2f2" readonly></textarea>
     <div>
       <button @click="copy()">Copy</button>
     </div>
@@ -96,5 +96,9 @@ button {
   font-size: 0.8rem;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.bg-color-f2f2f2 {
+  background-color: #F2F2F2
 }
 </style>
