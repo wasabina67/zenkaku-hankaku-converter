@@ -4,7 +4,7 @@
     <h4>Convert alphanumeric characters only</h4>
 
     <p>Text to convert</p>
-    <textarea placeholder="Enter your text"></textarea>
+    <textarea placeholder="Enter your text" v-model="yourText" ref="yt"></textarea>
     <div>
       <button @click="clear()">Clear</button>
       <button @click="paste()">Paste</button>
@@ -12,13 +12,13 @@
     </div>
 
     <p>zenkaku</p>
-    <textarea placeholder=""></textarea>
+    <textarea placeholder="" v-model="zenkakuText"></textarea>
     <div>
       <button @click="copy()">Copy</button>
     </div>
 
     <p>hankaku</p>
-    <textarea placeholder=""></textarea>
+    <textarea placeholder="" v-model="hankakuText"></textarea>
     <div>
       <button @click="copy()">Copy</button>
     </div>
@@ -29,6 +29,13 @@
 export default {
   name: 'App',
   components: {
+  },
+  data() {
+    return {
+      yourText: '',
+      zenkakuText: '',
+      hankakuText: ''
+    }
   }
 }
 </script>
