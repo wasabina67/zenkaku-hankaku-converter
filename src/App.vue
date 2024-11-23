@@ -99,6 +99,7 @@ button {
   font-size: 0.8rem;
   margin-left: 5px;
   margin-right: 5px;
+  margin-top: 5px;
 }
 
 .bg-color-f2f2f2 {
