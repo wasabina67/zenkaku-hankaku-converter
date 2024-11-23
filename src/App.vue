@@ -60,6 +60,9 @@ export default {
       })
     },
     convert() {
+      const ytext = this.yourText
+      this.zenkakuText = this.toZenkaku(ytext)
+      this.hankakuText = this.toHankaku(ytext)
     }
   }
 }
